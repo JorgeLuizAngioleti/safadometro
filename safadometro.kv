@@ -1,0 +1,67 @@
+<Interface>:
+
+  Label:
+    markup: True
+    text: '[size=40px][color=#00FF00][b] Calculadora Teorema Safadao [/size][/color][/b]'
+    text_size: self.width, None
+    size_hint: .9, .1
+    pos_hint: {'x': .05, 'top': .99}
+
+  Label:
+    text: 'Dia:'
+    text_size: self.width, None
+    size_hint: .3, .1
+    pos_hint: {'x': .05, 'top': .8}
+  TextInput:
+    id: dia
+    text: '[DD]'
+    multiline: False
+    size_hint: .4, .05
+    pos_hint: {'x': .2, 'top': .78}
+
+  Label:
+    text: 'Mes:'
+    text_size: self.width, None
+    size_hint: .3, .1
+    pos_hint: {'x': .05, 'top': .7}
+  TextInput:
+    id: mes
+    text: '[MM]'
+    multiline: False
+    size_hint: .4, .05
+    pos_hint: {'x': .2, 'top': .68}
+
+  Label:
+    text: 'Ano:'
+    text_size: self.width, None
+    size_hint: .3, .1
+    pos_hint: {'x': .05, 'top': .6}
+  TextInput:
+    id: ano
+    text: '[AA]'
+    multiline: False
+    size_hint: .4, .05
+    pos_hint: {'x': .2, 'top': .58}
+
+  Button:
+    id: bt1
+    text: 'Calcular'
+    size_hint: .1, .1
+    pos_hint: {'x': .3, 'top': .5}
+    on_press: root.calcular(self.on_press)
+
+  Label:
+    id: lb1
+    markup: True
+    text: 'Clique em calcular para saber o nivel de safádeza'
+    text_size: self.width, None
+    size_hint: .5, .1
+    pos_hint: {'x': .05, 'top': .4}
+
+  Label:
+    id: lb2
+    markup: True
+    text: ''
+    text_size: self.width, None
+    size_hint: .5, .1
+    pos_hint: {'x': .05, 'top': .3}
